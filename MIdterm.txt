@@ -1,0 +1,15 @@
+The dashboard is used to visualize and investigate the useful range of ocean current meters. The dashboard quailifies effectiveness of the sensor in terms of good data collected expected vs actual in terms of Percent Good and in terms of depth range the readings take over time. The plot identifies the need for yearly maitenance schedules to increase sensor life and effectiveness. 
+Sensor Background
+The ADCP
+Describe the plots:
+The data is collected form NDBC and shows the current velocity data including data quality for each reading or bin. 
+Map Plot
+Plot type and why
+data types used
+This data is taken at different locations. The locations are tracked using longitude and latitude coordinates. The map notes the different locations data is collected each is lableded by their NDBC assigned station Id and are coded by the owner. The plot shows stations operated in the gulf by several different companies. The stations are floating so that they move overtime so we used their average location to denote the approximate location the data is collected.
+Sensor Percent Good Plot
+Plot type and why
+data types used
+The sensor takes speed and direction readings of the ocean currents at different depths and at 10-20 min intervals depending on the station's settings. This data collected as bin and validated internally by the sensor. The sensor assigns a percent good to denote the percentage of pings passed the data rejection criteria when collecting the sensor data. The sensor data is then logged at time and depth. A bin corresponds to I have used the percent good as a measure of data quality. data quality 
+I also plotted the effective range of the sensor over time. THe depth range that sensor reads speed can be effected by the tilt of the sensor, mounting issues, interference from other nearby structures, and marine fouling. The plots give insight into how the sensor's effective range changes overtime and can help operators implement maintenance schedules to increase sensor life. 
+
