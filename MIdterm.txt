@@ -1,13 +1,16 @@
 The dashboard is used to visualize and investigate the useful range of ocean current meters. The dashboard quailifies effectiveness of the sensor in terms of good data collected expected vs actual in terms of Percent Good and in terms of depth range the readings take over time. The plot identifies the need for yearly maitenance schedules to increase sensor life and effectiveness. 
 Sensor Background
-The ADCP
+The ADCP can take speed and direction readings at 32 or 64  depths each is labeled as a bin. There are 32  to 64 bins per data packet. Each bin is taged with a time stamp location and Percent Good along with other data that is beyond the scope of this project. We are plotting the ratio of bins with a Percent Good greater than 90 for each data package. This tells us how many of the bins on the sensors are being utilized. Typical utilization is about 80 - 90 when the units are first installed and degrades over time due to various factors as well as limited sensor lifetime.
+The distace between bin measurements can vary greatly so we are also ploting the range of measurent over time as way to visualize the sensors effectiveness. The sensor are typically 10-50 meters below the surface but can be moored much lower to track the velocity are different depths.  
 Describe the plots:
 The data is collected form NDBC and shows the current velocity data including data quality for each reading or bin. 
 Map Plot
+The longitude and Latitude are discrete quantitative values plotted on a map.
 Plot type and why
 data types used
 This data is taken at different locations. The locations are tracked using longitude and latitude coordinates. The map notes the different locations data is collected each is lableded by their NDBC assigned station Id and are coded by the owner. The plot shows stations operated in the gulf by several different companies. The stations are floating so that they move overtime so we used their average location to denote the approximate location the data is collected.
 Sensor Percent Good Plot
+The data is collected in bins every 10-20 min so I set up the Percent Good Measureas a continuous quantitative value sinve we typically have a values for everyday. TIme is used as continuous field.
 Plot type and why
 data types used
 The sensor takes speed and direction readings of the ocean currents at different depths and at 10-20 min intervals depending on the station's settings. This data collected as bin and validated internally by the sensor. The sensor assigns a percent good to denote the percentage of pings passed the data rejection criteria when collecting the sensor data. The sensor data is then logged at time and depth. A bin corresponds to I have used the percent good as a measure of data quality. data quality 
