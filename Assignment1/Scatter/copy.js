@@ -21,7 +21,11 @@ function updateViz(data)
   // "fill" of "green"
 var join = d3.select("#viz")
 .selectAll("circle")
-.data(data);
+.data(data)
+.attr("cx", function(d) {return (width/2) + d.x;})
+.attr("cy",function(d){return (height/2.0) + d.y;})
+.attr("r",function(d){return (d.r/2.0);})
+.attr("fill","green");
 
 join.enter()
 .append("circle")
